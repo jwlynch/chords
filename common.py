@@ -3,4 +3,4 @@ aug_roots = ['C','F','Bb','Eb','Ab','Db','Gb','Cb','E','A','D','G']
 
 triad_list = []
 
-big_four_list = [] 
+big_four_list = []
