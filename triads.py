@@ -4,7 +4,7 @@ maj_roots = common.maj_roots
 aug_roots = common.aug_roots
 
 # chords for 95 - 98% of pop songs
-big_four_list = [] 
+big_four_list = common.big_four_list
 
 # Triads
 
