@@ -34,3 +34,22 @@ sus_triads = []
 for i in maj_roots:
     sus_triads.append(i + " sus")
 triad_list += sus_triads[:]
+
+# triad voicings
+
+triad_voicing_list = common.triad_voicing_list
+
+voicings = [" root on top", " 3rd on top", " 5th on top"]
+maj_triad_voicings = []
+min_triad_voicings = []
+
+for root_dex in range(12):
+    for voicing in voicings:
+        maj_triad_voicings.append(maj_triads[root_dex] + voicing)
+        min_triad_voicings.append(min_triads[root_dex] + voicing)
+
+for maj_triad_voicing in maj_triad_voicings:
+    triad_voicing_list.append(maj_triad_voicing)
+
+for min_triad_voicing in min_triad_voicings:
+    triad_voicing_list.append(min_triad_voicing)
