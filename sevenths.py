@@ -44,3 +44,22 @@ dim7s = []
 for i in maj_roots:
     dim7s.append(i + "dim7")
 seventh_list += dim7s[:]
+
+# seventh voicings
+
+seventh_voicing_list = common.seventh_voicing_list
+
+voicings = [" root on top", " 3rd on top", " 5th on top", " 7th on top"]
+dom7_voicings = []
+min7_voicings = []
+
+for root_dex in range(12):
+    for voicing in voicings:
+        dom7_voicings.append(dom7s[root_dex] + voicing)
+        min7_voicings.append(min7s[root_dex] + voicing)
+
+for dom7_voicing in dom_voicings:
+    seventh_voicing_list.append(dom7_voicing)
+
+for min_triad_voicing in min_triad_voicings:
+    seventh_voicing_list.append(min_triad_voicing)

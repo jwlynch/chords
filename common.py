@@ -5,4 +5,6 @@ triad_list = []
 
 triad_voicing_list = []
 
+seventh_voicing_list = []
+
 big_four_list = []
