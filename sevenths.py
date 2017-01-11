@@ -61,5 +61,5 @@ for root_dex in range(12):
 for dom7_voicing in dom7_voicings:
     seventh_voicing_list.append(dom7_voicing)
 
-for min_triad_voicing in min_triad_voicings:
     seventh_voicing_list.append(min_triad_voicing)
+for min7_voicing in min7_voicings:
