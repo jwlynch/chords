@@ -32,7 +32,7 @@ Bb,D,F,A
 B,D#,F#,A#
 """
 
-parse_spell_string(maj7_spellings, chord_spellings)
+parse_spell_string(maj7_spellings, chord_spellings, "maj7")
 
 maj7suss = []
 for i in maj_roots:
@@ -55,7 +55,7 @@ Bb,Eb,F,A
 B,E,F#,A#
 """
 
-parse_spell_string(maj7sus_spellings, chord_spellings)
+parse_spell_string(maj7sus_spellings, chord_spellings, "maj7sus")
 
 dom7s = []
 for i in maj_roots:
@@ -79,7 +79,7 @@ Bb,D,F,Ab
 B,D#,F#,A
 """
 
-parse_spell_string(dom7_spellings, chord_spellings)
+parse_spell_string(dom7_spellings, chord_spellings, "7")
 
 dom7suss = []
 for i in maj_roots:
@@ -102,7 +102,7 @@ Bb,Eb,F,Ab
 B,E,F#,A
 """
 
-parse_spell_string(dom7sus_spellings, chord_spellings)
+parse_spell_string(dom7sus_spellings, chord_spellings, "7sus")
 
 min7s = []
 for i in maj_roots:
@@ -126,7 +126,7 @@ Bb,Db,F,Ab
 B,D,F#,A
 """
 
-parse_spell_string(min7_spellings, chord_spellings)
+parse_spell_string(min7_spellings, chord_spellings, "m7")
 
 min7b5s = []
 for i in maj_roots:
@@ -149,7 +149,7 @@ Bb,Db,Fb,Ab
 B,D,F,A
 """
 
-parse_spell_string(min7b5_spellings, chord_spellings)
+parse_spell_string(min7b5_spellings, chord_spellings, "m7b5")
 
 dim7s = []
 for i in maj_roots:
@@ -172,7 +172,7 @@ Bb,Db,E,G
 B,D,F,Ab
 """
 
-parse_spell_string(dim7_spellings, chord_spellings)
+parse_spell_string(dim7_spellings, chord_spellings, "dim7")
 
 # seventh voicings
 
