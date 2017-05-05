@@ -110,6 +110,24 @@ for i in maj_roots:
 seventh_list += min7s[:]
 big_four_list += min7s[:]
 
+min7_spellings = """
+C,Eb,G,Bb
+C#,E,G#,B
+Db,Fb,Ab,Cb
+D,F,A,C
+Eb,Gb,Bb,Db
+E,G,B,D
+F,Ab,C,Eb
+F#,A,C#,E
+G,Bb,D,F
+Ab,Cb,Eb,Gb
+A,C,E,G
+Bb,Db,F,Ab
+B,D,F#,A
+"""
+
+parse_spell_string(min7_spellings, chord_spellings)
+
 min7b5s = []
 for i in maj_roots:
     min7b5s.append(i + "m7b5")
