@@ -64,6 +64,24 @@ for i in maj_roots:
     dim_triads.append(i + " dim")
 triad_list += dim_triads[:]
 
+dimtriad_spellings = """
+C,Eb,Gb
+C#,E,G
+Db,Fb,Abb
+D,F,Ab
+Eb,Gb,Bbb
+E,G,Bb
+F,Ab,Cb
+F#,A,C
+G,Bb,Db
+Ab,Cb,Ebb
+A,C,Eb
+Bb,Db,Fb
+B,D,F
+"""
+
+parse_spell_string(dimtriad_spellings, chord_spellings, "dim")
+
 aug_triads = []
 for i in aug_roots:
     aug_triads.append(i + " aug")
