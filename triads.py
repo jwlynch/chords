@@ -87,6 +87,24 @@ for i in aug_roots:
     aug_triads.append(i + " aug")
 triad_list += aug_triads[:]
 
+augtriad_spellings = """
+C,E,G#
+C#,E#,Gx
+Db,F,A
+D,F#,A#
+Eb,G,B
+E,G#,B#
+F,A,C#
+F#,A#,Cx
+G,B,D#
+Ab,C,E
+A,C#,E#
+Bb,D,F#
+B,D#,Fx
+"""
+
+parse_spell_string(augtriad_spellings, chord_spellings)
+
 sus_triads = []
 for i in maj_roots:
     sus_triads.append(i + " sus")
