@@ -1,4 +1,7 @@
 from chords import common
+from chords.common import parse_spell_string
+
+chord_spellings = common.chord_spellings
 
 maj_roots = common.maj_roots
 aug_roots = common.aug_roots
