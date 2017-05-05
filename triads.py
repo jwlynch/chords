@@ -41,6 +41,24 @@ for i in maj_roots:
 triad_list += min_triads[:]
 big_four_list += min_triads[:]
 
+mintriad_spellings = """
+C,Eb,G
+C#,E,G#
+Db,Fb,Ab
+D,F,A
+Eb,Gb,Bb
+E,G,B
+F,Ab,C
+F#,A,C#
+G,Bb,D
+Ab,Cb,Eb
+A,C,E
+Bb,Db,F
+B,D,F#
+"""
+
+parse_spell_string(mintriad_spellings, chord_spellings, "m")
+
 dim_triads = []
 for i in maj_roots:
     dim_triads.append(i + " dim")
