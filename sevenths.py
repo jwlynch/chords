@@ -133,6 +133,24 @@ for i in maj_roots:
     min7b5s.append(i + "m7b5")
 seventh_list += min7b5s[:]
 
+min7b5_spellings = """
+C,Eb,Gb,Bb
+C#,E,G,B
+Db,Fb,Abb,Cb
+D,F,Ab,C
+Eb,Gb,Bbb,Db
+E,G,Bb,D
+F,Ab,Cb,Eb
+F#,A,C,E
+G,Bb,Db,F
+Ab,Cb,Ebb,Gb
+A,C,Eb,G
+Bb,Db,Fb,Ab
+B,D,F,A
+"""
+
+parse_spell_string(min7b5_spellings, chord_spellings)
+
 dim7s = []
 for i in maj_roots:
     dim7s.append(i + "dim7")
