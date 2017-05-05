@@ -103,7 +103,7 @@ Bb,D,F#
 B,D#,Fx
 """
 
-parse_spell_string(augtriad_spellings, chord_spellings)
+parse_spell_string(augtriad_spellings, chord_spellings, "#5")
 
 sus_triads = []
 for i in maj_roots:
@@ -126,7 +126,7 @@ Bb,Eb,F
 B,E,F#
 """
 
-parse_spell_string(sus4triad_spellings, chord_spellings)
+parse_spell_string(sus4triad_spellings, chord_spellings, "sus")
 
 # triad voicings
 
