@@ -156,6 +156,24 @@ for i in maj_roots:
     dim7s.append(i + "dim7")
 seventh_list += dim7s[:]
 
+dim7_spellings = """
+C,Eb,Gb,A
+C#,E,G,Bb
+Db,E,G,Bb
+D,F,Ab,B
+Eb,Gb,A,C
+E,G,Bb,Db
+F,Ab,B,D
+F#,A,C,Eb
+G,Bb,Db,E
+Ab,B,D,F
+A,C,Eb,Gb
+Bb,Db,E,G
+B,D,F,Ab
+"""
+
+parse_spell_string(dim7_spellings, chord_spellings)
+
 # seventh voicings
 
 seventh_voicing_list = common.seventh_voicing_list
