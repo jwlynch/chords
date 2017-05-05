@@ -63,10 +63,46 @@ for i in maj_roots:
     seventh_list += dom7s[:]
 big_four_list += dom7s[:]
 
+dom7_spellings = """
+C,E,G,Bb
+C#,E#,G#,B
+Db,F,Ab,Cb
+D,F#,A,C
+Eb,G,Bb,Db
+E,G#,B,D
+F,A,C,Eb
+F#,A#,C#,E
+G,B,D,F
+Ab,C,Eb,Gb
+A,C#,E,G
+Bb,D,F,Ab
+B,D#,F#,A
+"""
+
+parse_spell_string(dom7_spellings, chord_spellings)
+
 dom7suss = []
 for i in maj_roots:
     dom7suss.append(i + "7sus")
 seventh_list += dom7suss[:]
+
+dom7sus_spellings = """
+C,F,G,Bb
+C#,F#,G#,B
+Db,Gb,Ab,Cb
+D,G,A,C
+Eb,Ab,Bb,Db
+E,A,B,D
+F,Bb,C,Eb
+F#,B,C#,E
+G,C,D,F
+Ab,Db,Eb,Gb
+A,D,E,G
+Bb,Eb,F,Ab
+B,E,F#,A
+"""
+
+parse_spell_string(dom7sus_spellings, chord_spellings)
 
 min7s = []
 for i in maj_roots:
