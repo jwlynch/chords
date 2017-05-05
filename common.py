@@ -8,3 +8,5 @@ triad_voicing_list = []
 seventh_voicing_list = []
 
 big_four_list = []
+
+chord_spellings = {}
