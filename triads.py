@@ -17,6 +17,24 @@ maj_triads = common.maj_roots[:]
 triad_list += maj_triads[:]
 big_four_list += maj_triads[:]
 
+majtriad_spellings = """
+C,E,G
+C#,E#,G#
+Db,F,Ab
+D,F#,A
+Eb,G,Bb
+E,G#,B
+F,A,C
+F#,A#,C#
+G,B,D
+Ab,C,Eb
+A,C#,E
+Bb,D,F
+B,D#,F#
+"""
+
+parse_spell_string(majtriad_spellings, chord_spellings)
+
 min_triads = []
 for i in maj_roots:
     min_triads.append(i + "m")
