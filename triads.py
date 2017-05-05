@@ -110,6 +110,24 @@ for i in maj_roots:
     sus_triads.append(i + " sus")
 triad_list += sus_triads[:]
 
+sus4triad_spellings = """
+C,F,G
+C#,F#,G#
+Db,Gb,Ab
+D,G,A
+Eb,G,Bb
+E,A,B
+F,Bb,C
+F#,B,C#
+G,C,D
+Ab,Db,Eb
+A,D,E
+Bb,Eb,F
+B,E,F#
+"""
+
+parse_spell_string(sus4triad_spellings, chord_spellings)
+
 # triad voicings
 
 triad_voicing_list = common.triad_voicing_list
