@@ -62,3 +62,14 @@ def parse_spell_string(*args):
             out_dict[root + ch_type] = spelling
 
         return out_dict
+
+# func parse_member_string
+#
+# takes a string with chord member names, one per line
+#
+# returns:list of member strings
+
+def parse_member_string(member_str):
+    member_list = member_str.split()
+
+    return member_list
