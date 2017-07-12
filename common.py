@@ -73,3 +73,6 @@ def parse_member_string(member_str):
     member_list = member_str.split()
 
     return member_list
+
+class ChordVoicingSet(Object):
+    pass
