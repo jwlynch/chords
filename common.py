@@ -56,8 +56,18 @@ def parse_spell_string(*args):
 
         spell_list = spell_str.split()
         for ch_sp in spell_list:
-            spelling = ch_sp.split(",")
-            root = spelling[0]
+            rootless_split = ch_sp.split(":")
+
+            root = ""
+
+            if len(rootless_split) == 1:
+                # root is first note in spelling
+                spelling = ch_sp.split(",")
+                root = spelling[0]
+            else:
+                # root is to the left of the colon
+                root = rootless_split[0]
+                spelling = rootless_split[1].split(".")
 
             out_dict[root + ch_type] = spelling
 
