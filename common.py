@@ -85,8 +85,18 @@ def parse_member_string(member_str):
     return member_list
 
 class ChordVoicingSet(Object):
-    def __init__(self, chord_type):
+    def __init__(self, spell_string, chord_type):
 
         # string to append to chord root
         # example: chord root C, chord_type "m7", would become "Cm7"
         self.chord_type = chord_type
+
+        # parse the string in parameter spell_string
+        # containing all chord spellings, forming a lookup table
+        # of chords of this type, and set object addribute spellings
+        # to this lookup table
+        self.spellings = parse_spell_string(
+            spell_string,
+            {},
+            chord_type
+        )
