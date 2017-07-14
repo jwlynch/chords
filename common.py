@@ -85,4 +85,5 @@ def parse_member_string(member_str):
     return member_list
 
 class ChordVoicingSet(Object):
-    pass
+    def __init__(self):
+        pass
