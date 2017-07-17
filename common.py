@@ -108,3 +108,7 @@ class ChordVoicingSet:
 
     def prt(self):
         print("chord suffix: %s" % self.chord_type)
+
+        c_notes = spellings["C" + chord_type]
+        chord_str = ""
+        chord_list = zip(c_notes, self.chord_members)
