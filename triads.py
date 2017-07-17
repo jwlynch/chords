@@ -42,6 +42,13 @@ fifth
 
 parse_spell_string(majtriad_spellings, chord_spellings)
 
+majTriadVoicing_object = \
+ChordVoicingSet
+(
+    majtriad_spellings,
+    triadMemberString
+)
+
 min_triads = []
 for i in maj_roots:
     min_triads.append(i + "m")
