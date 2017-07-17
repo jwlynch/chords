@@ -105,3 +105,6 @@ class ChordVoicingSet:
         # into a list of the chord members (like root, third, fifth)
         # and set object attribute chord_members to this list
         self.chord_members = parse_member_string(member_string)
+
+    def prt(self):
+        print("chord suffix: %s" % self.chord_type)
