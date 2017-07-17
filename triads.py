@@ -46,7 +46,8 @@ majTriadVoicing_object = \
 ChordVoicingSet \
 (
     majtriad_spellings,
-    triadMemberString
+    triadMemberString,
+    ""
 )
 
 min_triads = []
