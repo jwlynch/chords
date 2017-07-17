@@ -34,6 +34,12 @@ Bb,D,F
 B,D#,F#
 """
 
+triadMemberString = """
+root
+third
+fifth
+"""
+
 parse_spell_string(majtriad_spellings, chord_spellings)
 
 min_triads = []
