@@ -84,7 +84,7 @@ def parse_member_string(member_str):
 
     return member_list
 
-class ChordVoicingSet(Object):
+class ChordVoicingSet:
     def __init__(self, spell_string, member_string, chord_type):
 
         # string to append to chord root
