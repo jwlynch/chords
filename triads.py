@@ -43,7 +43,7 @@ fifth
 parse_spell_string(majtriad_spellings, chord_spellings)
 
 majTriadVoicing_object = \
-ChordVoicingSet
+ChordVoicingSet \
 (
     majtriad_spellings,
     triadMemberString
