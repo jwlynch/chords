@@ -139,6 +139,14 @@ B,D#,Fx
 
 parse_spell_string(augtriad_spellings, chord_spellings, "#5")
 
+voicing_objects["#5"] = \
+ChordVoicingSet \
+(
+    augtriad_spellings,
+    triadMemberString,
+    "#5"
+)
+
 sus_triads = []
 for i in maj_roots:
     sus_triads.append(i + " sus")
@@ -161,6 +169,14 @@ B,E,F#
 """
 
 parse_spell_string(sus4triad_spellings, chord_spellings, "sus")
+
+voicing_objects["sus"] = \
+ChordVoicingSet \
+(
+    sus4triad_spellings,
+    sus_triadMemberString,
+    "sus"
+)
 
 # triad voicings
 
