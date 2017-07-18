@@ -111,5 +111,7 @@ class ChordVoicingSet:
 
         c_notes = self.spellings["C" + self.chord_type]
         chord_list = list(zip(c_notes, self.chord_members))
+        note_list = []
 
-        return chord_list
+        for item in chord_list:
+            note_list.append("%s (%s)" % item)
