@@ -87,7 +87,7 @@ ChordVoicingSet \
 
 dim_triads = []
 for i in maj_roots:
-    dim_triads.append(i + " dim")
+    dim_triads.append(i + "mb5")
 triad_list += dim_triads[:]
 
 dimtriad_spellings = """
