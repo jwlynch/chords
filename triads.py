@@ -106,7 +106,7 @@ Bb,Db,Fb
 B,D,F
 """
 
-parse_spell_string(dimtriad_spellings, chord_spellings, "dim")
+parse_spell_string(dimtriad_spellings, chord_spellings, "mb5")
 
 aug_triads = []
 for i in aug_roots:
