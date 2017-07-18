@@ -10,6 +10,9 @@ aug_roots = common.aug_roots
 # chords for 95 - 98% of pop songs
 big_four_list = common.big_four_list
 
+# voicing object dict
+voicing_objects = {}
+
 # Triads
 
 triad_list = common.triad_list
