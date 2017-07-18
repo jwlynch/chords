@@ -45,7 +45,7 @@ fifth
 
 parse_spell_string(majtriad_spellings, chord_spellings)
 
-majTriadVoicing_object = \
+voicing_objects[""] = \
 ChordVoicingSet \
 (
     majtriad_spellings,
