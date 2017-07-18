@@ -147,6 +147,12 @@ ChordVoicingSet \
     "#5"
 )
 
+sus_triadMemberString = """
+root
+Fourth
+Fifth
+"""
+
 sus_triads = []
 for i in maj_roots:
     sus_triads.append(i + " sus")
