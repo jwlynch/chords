@@ -77,6 +77,14 @@ B,D,F#
 
 parse_spell_string(mintriad_spellings, chord_spellings, "m")
 
+voicing_objects["m"] = \
+ChordVoicingSet \
+(
+    mintriad_spellings,
+    triadMemberString,
+    "m"
+)
+
 dim_triads = []
 for i in maj_roots:
     dim_triads.append(i + " dim")
