@@ -108,6 +108,14 @@ B,D,F
 
 parse_spell_string(dimtriad_spellings, chord_spellings, "mb5")
 
+voicing_objects["mb5"] = \
+ChordVoicingSet \
+(
+    dimtriad_spellings,
+    triadMemberString,
+    "mb5"
+)
+
 aug_triads = []
 for i in aug_roots:
     aug_triads.append(i + " aug")
