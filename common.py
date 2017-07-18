@@ -115,3 +115,7 @@ class ChordVoicingSet:
 
         for item in chord_list:
             note_list.append("%s (%s)" % item)
+
+        note_str = ", ".join(note_list)
+
+        print("the members are " + note_str)
