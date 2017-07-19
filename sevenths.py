@@ -34,6 +34,13 @@ Bb,D,F,A
 B,D#,F#,A#
 """
 
+seventhMemberString = """
+root
+third
+fifth
+seventh
+"""
+
 parse_spell_string(maj7_spellings, chord_spellings, "maj7")
 
 maj7suss = []
