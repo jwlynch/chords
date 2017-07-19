@@ -9,6 +9,10 @@ seventh_voicing_list = []
 
 big_four_list = []
 
+# dict to hold the voicing sets for the various
+# chord types, keyed by their chord name suffix
+voicing_objects = {}
+
 # Chord spellings: is a dict whose keys are chord names,
 # and whose values are the lists of notes in those chords.
 #

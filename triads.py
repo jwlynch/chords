@@ -1,6 +1,7 @@
 from chords import common
 from chords.common import parse_spell_string
 from chords.common import ChordVoicingSet
+from chords.common import voicing_objects
 
 chord_spellings = common.chord_spellings
 
@@ -9,9 +10,6 @@ aug_roots = common.aug_roots
 
 # chords for 95 - 98% of pop songs
 big_four_list = common.big_four_list
-
-# voicing object dict
-voicing_objects = {}
 
 # Triads
 
