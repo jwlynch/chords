@@ -1,6 +1,8 @@
 
 from chords import common
 from chords.common import parse_spell_string
+from chords.common import ChordVoicingSet
+from chords.common import voicing_objects
 
 chord_spellings = common.chord_spellings
 
