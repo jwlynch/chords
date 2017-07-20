@@ -81,6 +81,14 @@ seventh
 
 parse_spell_string(maj7sus_spellings, chord_spellings, "maj7sus")
 
+voicing_objects["maj7sus"] = \
+ChordVoicingSet \
+(
+    maj7_spellings,
+    seventhSusMemberString,
+    "maj7sus"
+)
+
 dom7s = []
 for i in maj_roots:
     dom7s.append(i + "7")
@@ -102,6 +110,14 @@ A,C#,E,G
 Bb,D,F,Ab
 B,D#,F#,A
 """
+
+voicing_objects["7"] = \
+ChordVoicingSet \
+(
+    dom7_spellings,
+    seventhMemberString,
+    "7"
+)
 
 parse_spell_string(dom7_spellings, chord_spellings, "7")
 
@@ -128,6 +144,14 @@ B,E,F#,A
 
 parse_spell_string(dom7sus_spellings, chord_spellings, "7sus")
 
+voicing_objects["7sus"] = \
+ChordVoicingSet \
+(
+    dom7sus_spellings,
+    seventhSusMemberString,
+    "7sus"
+)
+
 min7s = []
 for i in maj_roots:
     min7s.append(i + "m7")
@@ -152,6 +176,14 @@ B,D,F#,A
 
 parse_spell_string(min7_spellings, chord_spellings, "m7")
 
+voicing_objects["m7"] = \
+ChordVoicingSet \
+(
+    min7_spellings,
+    seventhMemberString,
+    "m7"
+)
+
 min7b5s = []
 for i in maj_roots:
     min7b5s.append(i + "m7b5")
@@ -175,6 +207,14 @@ B,D,F,A
 
 parse_spell_string(min7b5_spellings, chord_spellings, "m7b5")
 
+voicing_objects["m7b5"] = \
+ChordVoicingSet \
+(
+    min7b5_spellings,
+    seventhMemberString,
+    "m7b5"
+)
+
 dim7s = []
 for i in maj_roots:
     dim7s.append(i + "dim7")
@@ -197,6 +237,14 @@ B,D,F,Ab
 """
 
 parse_spell_string(dim7_spellings, chord_spellings, "dim7")
+
+voicing_objects["dim7"] = \
+ChordVoicingSet \
+(
+    dim7_spellings,
+    seventhMemberString,
+    "dim7"
+)
 
 # seventh voicings
 
