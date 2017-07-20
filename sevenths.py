@@ -72,6 +72,13 @@ Bb,Eb,F,A
 B,E,F#,A#
 """
 
+seventhSusMemberString = """
+root
+fourth
+fifth
+seventh
+"""
+
 parse_spell_string(maj7sus_spellings, chord_spellings, "maj7sus")
 
 dom7s = []
