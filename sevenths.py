@@ -43,6 +43,14 @@ seventh
 
 parse_spell_string(maj7_spellings, chord_spellings, "maj7")
 
+voicing_objects["maj7"] = \
+ChordVoicingSet \
+(
+    maj7_spellings,
+    seventhMemberString,
+    "maj7"
+)
+
 maj7suss = []
 for i in maj_roots:
     maj7suss.append(i + "maj7sus")
