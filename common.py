@@ -110,6 +110,11 @@ class ChordVoicingSet:
         # and set object attribute chord_members to this list
         self.chord_members = parse_member_string(member_string)
 
+        # make voicing strings from chord members
+        self.voicings = []
+        for member in self.chord_members:
+            self.voicings.append(member + " on top")
+
     def prt(self):
         print("chord suffix: %s" % self.chord_type)
 
