@@ -42,6 +42,25 @@ chord_spellings = {}
 #   output dict
 #   optionally, chord type string (like m, 7, 7sys, m7)
 #  returns: output dict
+#
+# format:
+#
+# each line is one chord, possibly with enharmonic spellings,
+# separated with |.
+#
+# in each enharmonic spelling, chords that have the root
+# among the chord members, simply consist of notes, the first
+# of which is the root, and the rest are nonroot chord tones.
+#
+# chords which are rootless still list the root, only with a
+# colon char (:) separating the root from the chird tones.
+#
+# examples
+#
+# C triad: C,E,G; C#/Db triad: C#,E#,G#|Db,F,Ab
+#
+# One possible altered rootless dominant: C:E,Bb,D#
+# on Db/C#: C#:E#,B,Dx|Db:F,Cb,E
 
 def parse_spell_string(*args):
     if len(args) < 2:
