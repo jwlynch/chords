@@ -78,21 +78,23 @@ def parse_spell_string(*args):
             ch_type = args[2]
 
         spell_list = spell_str.split()
-        for ch_sp in spell_list:
-            rootless_split = ch_sp.split(":")
+        for spell_line in spell_list:
+            enharmonic_list = spell_line.split("|")
+            for ch_sp in enharmonic_list:
+                rootless_split = ch_sp.split(":")
 
-            root = ""
+                root = ""
 
-            if len(rootless_split) == 1:
-                # root is first note in spelling
-                spelling = ch_sp.split(",")
-                root = spelling[0]
-            else:
-                # root is to the left of the colon
-                root = rootless_split[0]
-                spelling = rootless_split[1].split(".")
+                if len(rootless_split) == 1:
+                    # root is first note in spelling
+                    spelling = ch_sp.split(",")
+                    root = spelling[0]
+                else:
+                    # root is to the left of the colon
+                    root = rootless_split[0]
+                    spelling = rootless_split[1].split(",")
 
-            out_dict[root + ch_type] = spelling
+                out_dict[root + ch_type] = spelling
 
         return out_dict
 
