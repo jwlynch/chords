@@ -136,6 +136,9 @@ class ChordVoicingSet:
         for member in self.chord_members:
             self.voicings.append(member + " on top")
 
+    def chordname_list(self):
+        return list(self.spellings.keys())
+
     def prt(self):
         print("chord suffix: %s" % self.chord_type)
         print("voicings: %s" % ", ".join(self.voicings))
