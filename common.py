@@ -153,6 +153,18 @@ class ChordVoicingSet:
 
         self.choosable_chords = None
 
+    def choose_chord(self):
+        if (
+            self.choosable_chords is None
+            or
+            self.choosable_chords == []
+        ):
+            self.choosable_chords = self.chordname_list()
+
+        result = shufflepick(self.choosable_chords)
+
+        return result
+
     def chordname_list(self):
         return list(self.spellings.keys())
 
