@@ -149,6 +149,10 @@ class ChordVoicingSet:
         for member in self.chord_members:
             self.voicings.append(member + " on top")
 
+        # holds list of randomly choosable chords
+
+        self.choosable_chords = None
+
     def chordname_list(self):
         return list(self.spellings.keys())
 
