@@ -1,3 +1,5 @@
+from random import shuffle
+
 maj_roots = ['C','F','Bb','Eb','Ab','Db','F#','B','E','A','D','G']
 aug_roots = ['C','F','Bb','Eb','Ab','Db','Gb','Cb','E','A','D','G']
 
@@ -108,6 +110,17 @@ def parse_member_string(member_str):
     member_list = member_str.split()
 
     return member_list
+
+# takes a list, shuffles it, then pops the front off
+
+def shufflepick(l):
+    result = None
+
+    if len(l) > 0:
+        shuffle(l)
+        result = l.pop()
+
+    return result
 
 class ChordVoicingSet:
     def __init__(self, spell_string, member_string, chord_type):
