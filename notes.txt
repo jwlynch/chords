@@ -1,0 +1,4 @@
+have a method of ChordVoicingSet that returns a list of all possible roots,
+for enharmonic roots, should be in a list, like this:
+
+["A",["Bb","A#"],"B","C",["Db","C#"], ... , ["Ab","G#"]]
