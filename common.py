@@ -68,7 +68,7 @@ def parse_spell_string(*args):
     if len(args) < 2:
         print("parse_spell_string: too few args")
         return {}
-    elif len(args) > 3:
+    elif len(args) > 4:
         print("parse_spell_string: too many args")
         return {}
     else:
@@ -76,12 +76,19 @@ def parse_spell_string(*args):
         out_dict = args[1]
 
         ch_type = ""
-        if len(args) == 3:
+        if len(args) >= 3:
             ch_type = args[2]
+
+        out_rootList = []
+        if len(args) >= 4:
+            out_rootList = args[3]
 
         spell_list = spell_str.split()
         for spell_line in spell_list:
             enharmonic_list = spell_line.split("|")
+
+            roots = []
+
             for ch_sp in enharmonic_list:
                 rootless_split = ch_sp.split(":")
 
@@ -97,6 +104,12 @@ def parse_spell_string(*args):
                     spelling = rootless_split[1].split(",")
 
                 out_dict[root + ch_type] = spelling
+                roots.append(root)
+
+            if len(roots) > 1:
+                out_rootList.append(roots)
+            elif len(roots) == 1:
+                out_rootList.append(roots[0])
 
         return out_dict
 
