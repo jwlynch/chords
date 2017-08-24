@@ -21,8 +21,7 @@ big_four_list += maj_triads[:]
 
 majtriad_spellings = """
 C,E,G
-C#,E#,G#
-Db,F,Ab
+C#,E#,G#|Db,F,Ab
 D,F#,A
 Eb,G,Bb
 E,G#,B
@@ -59,8 +58,7 @@ big_four_list += min_triads[:]
 
 mintriad_spellings = """
 C,Eb,G
-C#,E,G#
-Db,Fb,Ab
+C#,E,G#|Db,Fb,Ab
 D,F,A
 Eb,Gb,Bb
 E,G,B
@@ -90,8 +88,7 @@ triad_list += dim_triads[:]
 
 dimtriad_spellings = """
 C,Eb,Gb
-C#,E,G
-Db,Fb,Abb
+C#,E,G|Db,Fb,Abb
 D,F,Ab
 Eb,Gb,Bbb
 E,G,Bb
@@ -121,8 +118,7 @@ triad_list += aug_triads[:]
 
 augtriad_spellings = """
 C,E,G#
-C#,E#,Gx
-Db,F,A
+C#,E#,GxDb,F,A
 D,F#,A#
 Eb,G,B
 E,G#,B#
@@ -158,8 +154,7 @@ triad_list += sus_triads[:]
 
 sus4triad_spellings = """
 C,F,G
-C#,F#,G#
-Db,Gb,Ab
+C#,F#,G#|Db,Gb,Ab
 D,G,A
 Eb,G,Bb
 E,A,B

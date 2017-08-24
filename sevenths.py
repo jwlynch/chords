@@ -20,8 +20,7 @@ seventh_list += maj7s[:]
 
 maj7_spellings = """
 C,E,G,B
-C#,E#,G#,B#
-Db,F,Ab,C
+C#,E#,G#,B#|Db,F,Ab,C
 D,F#,A,C#
 Eb,G,Bb,D
 E,G#,B,D#
@@ -58,8 +57,7 @@ for i in maj_roots:
 
 maj7sus_spellings = """
 C,F,G,B
-C#,F#,G#,B#
-Db,Gb,Ab,C
+C#,F#,G#,B#|Db,Gb,Ab,C
 D,G,A,C#
 Eb,Ab,Bb,D
 E,A,B,D#
@@ -97,8 +95,7 @@ big_four_list += dom7s[:]
 
 dom7_spellings = """
 C,E,G,Bb
-C#,E#,G#,B
-Db,F,Ab,Cb
+C#,E#,G#,B|Db,F,Ab,Cb
 D,F#,A,C
 Eb,G,Bb,Db
 E,G#,B,D
@@ -128,8 +125,7 @@ seventh_list += dom7suss[:]
 
 dom7sus_spellings = """
 C,F,G,Bb
-C#,F#,G#,B
-Db,Gb,Ab,Cb
+C#,F#,G#,B|Db,Gb,Ab,Cb
 D,G,A,C
 Eb,Ab,Bb,Db
 E,A,B,D
@@ -160,8 +156,7 @@ big_four_list += min7s[:]
 
 min7_spellings = """
 C,Eb,G,Bb
-C#,E,G#,B
-Db,Fb,Ab,Cb
+C#,E,G#,B|Db,Fb,Ab,Cb
 D,F,A,C
 Eb,Gb,Bb,Db
 E,G,B,D
@@ -191,8 +186,7 @@ seventh_list += min7b5s[:]
 
 min7b5_spellings = """
 C,Eb,Gb,Bb
-C#,E,G,B
-Db,Fb,Abb,Cb
+C#,E,G,B|Db,Fb,Abb,Cb
 D,F,Ab,C
 Eb,Gb,Bbb,Db
 E,G,Bb,D
@@ -222,8 +216,7 @@ seventh_list += dim7s[:]
 
 dim7_spellings = """
 C,Eb,Gb,A
-C#,E,G,Bb
-Db,E,G,Bb
+C#,E,G,Bb|Db,E,G,Bb
 D,F,Ab,B
 Eb,Gb,A,C
 E,G,Bb,Db
