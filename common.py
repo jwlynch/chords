@@ -185,6 +185,11 @@ class ChordVoicingSet:
 
         result = shufflepick(self.choosable_chords)
 
+        if isinstance(result, list):
+            result = shufflepick(result[:])
+
+        result += self.chord_type
+
         return result
 
     def chordname_list(self):
