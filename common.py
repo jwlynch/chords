@@ -179,7 +179,21 @@ class ChordVoicingSet:
         return result
 
     def chordname_list(self):
-        return list(self.spellings.keys())
+        r = self.roots[:]
+
+        result = []
+        for root in r:
+            if isinstance(root,list):
+                sublist = []
+
+                for rt in root:
+                    sublist.append(rt + self.chord_type)
+
+                result.append(sublist)
+            else:
+                result.append(root + self.chord_type)
+
+        return result
 
     def prt(self):
         print("chord suffix: %s" % self.chord_type)
