@@ -142,6 +142,14 @@ class ChordVoicingSet:
         # example: chord root C, chord_type "m7", would become "Cm7"
         self.chord_type = chord_type
 
+        # self.roots is the list of roots, parsed from the
+        # spell string. Enharmonic spellings are each in their
+        # own list. the whole list will look like:
+        #
+        # ["C",["C#","Db"],"D","Eb", ... ,"B"]
+
+        self.roots = []
+
         # parse the string in parameter spell_string
         # containing all chord spellings, forming a lookup table
         # of chords of this type, and set object attribute spellings
