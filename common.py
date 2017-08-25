@@ -181,7 +181,7 @@ class ChordVoicingSet:
             or
             self.choosable_chords == []
         ):
-            self.choosable_chords = self.chordname_list()
+            self.choosable_chords = self.roots[:]
 
         result = shufflepick(self.choosable_chords)
 
