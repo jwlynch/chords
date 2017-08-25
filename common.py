@@ -153,11 +153,12 @@ class ChordVoicingSet:
         # parse the string in parameter spell_string
         # containing all chord spellings, forming a lookup table
         # of chords of this type, and set object attribute spellings
-        # to this lookup table
+        # to this lookup table. also adds roots to a separate list.
         self.spellings = parse_spell_string(
             spell_string,
             {},
-            chord_type
+            chord_type,
+            self.roots
         )
 
         # parse the string in the parameter member_string
