@@ -190,6 +190,12 @@ class ChordVoicingSet:
 
         return result
 
+    def choose_voicing(self):
+        if len(self.choosable_voicings) == 0:
+            self.choosable_voicings = self.chord_members[:]
+
+        return shufflepick(self.choosable_voicings) + " on top"
+
     def chordname_list(self):
         r = self.roots[:]
 
