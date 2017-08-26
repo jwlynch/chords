@@ -167,6 +167,7 @@ class ChordVoicingSet:
         self.chord_members = parse_member_string(member_string)
 
         # make voicing strings from chord members
+        self.choosable_voicings = []
 
         # holds list of randomly choosable chords
 
