@@ -2,3 +2,9 @@ have a method of ChordVoicingSet that returns a list of all possible roots,
 for enharmonic roots, should be in a list, like this:
 
 ["A",["Bb","A#"],"B","C",["Db","C#"], ... , ["Ab","G#"]]
+
+have a way to build a choice list of different chord types within 12 possible roots, example:
+
+[Cm,[C#m,Dbm],Dm,Ebm,E,F,F#,G,Absus4,Asus4,Bbsus4,Bsus4]
+
+note here there are three different chord types, in 12 roots.
