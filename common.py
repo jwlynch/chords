@@ -206,7 +206,13 @@ class ChordVoicingSet:
         return shufflepick(self.choosable_voicings) + " on top"
 
     def max_width_chordname(self):
-        pass
+        ch_lst = flatten(self.chordname_list())
+
+        m = 0
+        for ch in ch_lst:
+            m = max(m, len(ch))
+
+        return m
 
     def max_width_voicing(self):
         pass
