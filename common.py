@@ -196,6 +196,15 @@ class ChordVoicingSet:
 
         return shufflepick(self.choosable_voicings) + " on top"
 
+    def max_width_chordname(self):
+        pass
+
+    def max_width_voicing(self):
+        pass
+
+    def max_width(self):
+        return self.max_width_chordname() + 1 + self.max_width_voicing()
+
     def chordname_list(self):
         r = self.roots[:]
 
