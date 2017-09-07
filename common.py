@@ -124,6 +124,15 @@ def parse_member_string(member_str):
 
     return member_list
 
+# given a list, return that list flattened.
+
+def flatten(x):
+    rt = []
+    for i in x:
+        if isinstance(i,list): rt.extend(flatten(i))
+        else: rt.append(i)
+    return rt
+
 # takes a list, shuffles it, then pops the front off
 
 def shufflepick(l):
