@@ -215,7 +215,14 @@ class ChordVoicingSet:
         return m
 
     def max_width_voicing(self):
-        pass
+        m = 0
+
+        for v in self.chord_members:
+            m = max(m, len(v))
+
+        m += len(" on top")
+
+        return m
 
     def max_width(self):
         return self.max_width_chordname() + 1 + self.max_width_voicing()
